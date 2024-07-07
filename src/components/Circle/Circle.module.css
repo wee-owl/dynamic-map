@@ -1,0 +1,105 @@
+.circle__item {
+  position: relative;
+  font-size: 16px;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  animation: shadow 10s linear infinite;
+}
+
+.circle__item:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border: 1px dashed #ffffff;
+  border-radius: 50%;
+  animation: round2 7s 3s linear infinite;
+}
+
+.circle__item:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border: 1px dashed #ffffff;
+  border-radius: 50%;
+  animation: round1 9s 1s linear infinite;
+}
+
+@keyframes shadow {
+  0% {
+    opacity: 0
+  }
+
+  5% {
+    opacity: 1
+  }
+
+  60% {
+    opacity: 1
+  }
+
+  to {
+    opacity: 0
+  }
+}
+
+@keyframes round1 {
+  0% {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0
+  }
+
+  5% {
+    opacity: 1
+  }
+
+  60% {
+    opacity: 1
+  }
+
+  to {
+    width: 300%;
+    height: 300%;
+    left: -100%;
+    top: -100%;
+    opacity: 0
+  }
+}
+
+@keyframes round2 {
+  0% {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 1
+  }
+
+  5% {
+    opacity: 1
+  }
+
+  60% {
+    opacity: 1
+  }
+
+  to {
+    width: 200%;
+    height: 200%;
+    left: -50%;
+    top: -50%;
+    opacity: 0
+  }
+}

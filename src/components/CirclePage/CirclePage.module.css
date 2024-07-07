@@ -1,0 +1,40 @@
+.circle__page__wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 3%;
+}
+
+.circle__page__content {
+  color: #ffffff;
+}
+
+.circle__page__button {
+  padding: 10px 20px;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color : transparent;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.circle__page__button:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.circle__item {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 2px dotted transparent;
+  border-radius: 50%;
+  background-color: #0006;
+  z-index: -1;
+}
